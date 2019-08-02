@@ -44,7 +44,8 @@ Enables the processing of files that contain only one column\.
 `ContainsHeader`  <a name="cfn-glue-classifier-csvclassifier-containsheader"></a>
 Indicates whether the CSV file contains a header\.  
 *Required*: No  
-*Type*: String  
+*Type*: String
+Valid Values: UNKNOWN | PRESENT | ABSENT
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Delimiter`  <a name="cfn-glue-classifier-csvclassifier-delimiter"></a>
