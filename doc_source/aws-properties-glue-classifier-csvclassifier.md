@@ -52,6 +52,9 @@ A custom symbol to denote what separates each column entry in the row\.
 *Required*: No  
 *Type*: String  
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Allowed Values*: Space | " | ' | , | \t OR \u0009
+Tip: Don't use parameters to hold these values. Please use them directly in the resource definition. As of now, following are not supported: SOA (Start of Heading OR ^A OR Ctrl-A (\u0001)), STX ( Start of Text OR ^B or Ctrl-B (\u0002)) or ETX ( End of Text OR ^C or CTRL-C (\u0003)
+
 
 `DisableValueTrimming`  <a name="cfn-glue-classifier-csvclassifier-disablevaluetrimming"></a>
 Specifies not to trim values before identifying the type of column values\. The default value is `true`\.  
